@@ -1,10 +1,10 @@
 # AutoRepack
 
->![IMPORTANT]
+>[!IMPORTANT]
 >Converts both fastboot and recovery flashable roms into flashable dats. Type su and repack in terminal to start.
 
 This script is designed to make custom ROM flashings easier on the user. ~~Note that this is **for Poco F3 device.**~~
-Many recoveries still can't flash these ROMs and this tool allows you to convert them into TWRP friendly flashables.
+Many recoveries still can't flash these ROMs and this tool allows you to convert them into TWRP friendly flashables. :+1:
 
 It can also repack fastboot ROMS into recovery flashables so that user wouldn't need PC to handle these trivial stuff.
 
