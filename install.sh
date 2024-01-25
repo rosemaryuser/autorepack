@@ -126,7 +126,6 @@ ui_print " "
 ui_print "*********************"
 ui_print "- AutoRepacker by ErenMetesar(modded)"
 ui_print "- v10.0 "
-ui_print "- English"
 ui_print "*********************"
 ui_print " "
 }
@@ -197,7 +196,7 @@ unzip -p "$ZIPFILE" "repack" -d $MODPATH/system >/dev/null #MODPATH=/system/bin
 unzip -o "$ZIPFILE" "uninstall.sh" -d $MODPATH >/dev/null
  #Create work folders
 ui_print "- Creating working folders"
-for f in "bin extracted tmp twrp .dialogrc README.md cleanup.sh colors.properties recovery_manager.sh repack.sh" do
+for f in "bin extracted tmp twrp .dialogrc README.md cleanup.sh colors.properties recovery_manager.sh repack.sh"; do
   unzip -o "$ZIPFILE" "$f" -d /data/local/autorepack >/dev/null
 done  
 /data/local/autorepack >/dev/null
