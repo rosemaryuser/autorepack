@@ -46,6 +46,12 @@ Integrity Check also checks the workspace so that there's no residual files that
 
 and many more..
 
-This script is only usable in Android phones, our Telegram chat:
+>[!NOTE]
+>This script is only usable in Android phones, original Telegram chat:
+>
+>https://t.me/PocoF3DFE
+>
+>To contact me
+>
+>https://t.me/techgeekyboy
 
-https://t.me/PocoF3DFE
