@@ -1,0 +1,7 @@
+id=autorepacker
+name=AutoRepacker
+version=v7
+versionCode=7
+author=ErenMetesar
+description= Converts both fastboot and recovery flashable roms into flashable dats. Type su and repack in terminal to start.
+template=3
