@@ -4,6 +4,12 @@ clear
 cd /data/local/autorepack
 git="/data/data/com.termux/files/usr/bin/git"
 
+if [ ! -f "$git" ]; then
+    ui_print " "
+    ui_print "! Make sure you installed git in Termux app before flashing the module:"
+    ui_print "  apt install git -y"; ui_print " "; abort
+fi
+
 { cp colors.properties $PREFIX/../home/.termux; \
 chown -R $(stat -c%G $PREFIX) $PREFIX/../home/.termux; \
 termux-reload-settings;} &> /dev/null
