@@ -2,7 +2,7 @@
 
 clear
 cd /data/local/autorepack
-git="/system/bin/git"
+git="/data/local/autorepack/bin/git"
 
 if [ ! -f "$git" ]; then
     echo
