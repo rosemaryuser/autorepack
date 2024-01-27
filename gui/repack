@@ -2,7 +2,22 @@
 
 clear
 cd /data/local/autorepack
-git="/data/data/com.termux/files/usr/bin/git"
+git="/system/bin/git"
+
+if [ ! -f "$git" ]; then
+    echo
+    echo "! Please install git in Termux app:"
+    echo "  apt install git -y"; echo " "; 
+    echo "have u installed git.(y/n)"
+    read yes
+    if [ "$yes" == "y" ]; then 
+       git="/data/data/com.termux/files/usr/bin/git"
+    else 
+       abort "git not installed"
+   fi
+fi
+
+
 
 { cp colors.properties $PREFIX/../home/.termux; \
 chown -R $(stat -c%G $PREFIX) $PREFIX/../home/.termux; \
