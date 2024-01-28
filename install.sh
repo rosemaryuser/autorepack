@@ -202,7 +202,7 @@ unzip -oq "$ZIPFILE" "bin/*" "tmp/* "extracted/*" "twrp/*" "repack.sh" recovery_
 ui_print "- Unmounting /system, /data, and rootfs"
 mount -o ro,remount "/" 2>/dev/null
 mount -o ro,remount "$sys_mount" 2>/dev/null
-ui_print "- Done !"
+ui_print "- ! Reboot your device before using"
 }
 
 # Only some special files require specific permissions
