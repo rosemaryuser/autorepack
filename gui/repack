@@ -4,20 +4,32 @@ clear
 cd /data/local/autorepack
 git="/data/local/autorepack/bin/git"
 
-if [ ! -f "$git" ]; then
-    echo
-    echo "! Please install git in Termux app:"
-    echo "  apt install git -y"; echo " "; 
-    echo "have u installed git.(y/n)"
-    read yes
-    if [ "$yes" == "y" ]; then 
-       git="/data/data/com.termux/files/usr/bin/git"
-    else 
-       abort "git not installed"
-   fi
-fi
-
-
+while true; do
+    if [ ! -f "$git" ]; then
+        echo
+        echo "! Git is not found at the expected location."
+        echo "Please install git in Termux app by running:"
+        echo "apt install git -y"
+        echo "Have you installed git in Termux? (y/n)"
+        read answer
+        case "$answer" in
+        [Yy]*) # any variation of "yes" or "YES"
+            git="/data/data/com.termux/files/usr/bin/git"
+            break # Exit the loop when a valid response is given
+            ;;
+        [Nn]*) # any variation of "no" or "NO"
+            abort "Aborting. Git is required for this operation."
+            ;;
+        *) # for any other response
+            echo
+            echo "Please answer with y or n."
+            ;;
+        esac
+    else
+        # Git is found, so we can break the loop and continue with the script
+        break
+    fi
+done
 
 { cp colors.properties $PREFIX/../home/.termux; \
 chown -R $(stat -c%G $PREFIX) $PREFIX/../home/.termux; \
