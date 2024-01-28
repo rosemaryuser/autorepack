@@ -2,6 +2,21 @@
 
 >[!IMPORTANT]
 >Converts both fastboot and recovery flashable roms into flashable dats. Type su and repack in terminal to start.
+>
+# To get this tool
+```
+apt install git p7zip -y
+git clone https://github.com/rosemaryuser/autorepack.git
+7z a -tzip autorepack.zip ./autorepack/*
+su
+mv autorepack.zip -t /sdcard
+```
+>[!NOTE]
+>__Find your autorepack.zip in your internal storage and flash it in magisk__
+>
+>__Put those command in termux__
+>
+>__Alternatively you can just dowload the module from release section or zip__ 
 
 This script is designed to make custom ROM flashings easier on the user. ~~Note that this is **for Poco F3 device.**~~
 Many recoveries still can't flash these ROMs and this tool allows you to convert them into TWRP friendly flashables. :+1:
