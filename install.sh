@@ -219,7 +219,7 @@ set_permissions() {
   # set_perm  $MODPATH/system/bin/dex2oat         0     2000    0755      u:object_r:dex2oat_exec:s0
   # set_perm  $MODPATH/system/lib/libart.so       0     0       0644  set_perm $MODPATH/system/$bin/systemize 0 0 0777
   set_perm_recursive $MODPATH/system/bin 0 0 0755 0755
-  set_perm_recursive /data/local/repack 0 0 0777 0777
+  set_perm_recursive /data/local/autorepack 0 0 0777 0777
   #set_perm $MODPATH/system/lib/libcap.so.2 0 0 0644
 }
 
