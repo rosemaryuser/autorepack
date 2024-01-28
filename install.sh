@@ -197,17 +197,7 @@ unzip -o "$ZIPFILE" "gui/*" -d $MODPATH/system >/dev/null
 mv -f $MODPATH/system/gui $MODPATH/system/bin
  #Create work folders
 ui_print "- Creating working folders"
-ui_print "- This will take a while depending on your network speed"
-#TMPDIR=/dev/tmp already defined in updater-binary
-unzip -ojq "$ZIPFILE" "bin/git" -d $TMPDIR
-git="$TMPDIR/git"
-chmod +x "$git"
-$git clone https://github.com/rosemaryuser/autorepack.git  /data/local/autorepack >/dev/null
-remove="/data/local/autorepack"
-rm -rf "$remove/uninstall.sh" 
-rm -rf "$remove/install.sh" 
-rm -rf "$remove/module.prop" 
-rm -rf "$remove/gui" 
+unzip -oq "$ZIPFILE" "bin/*" "tmp/* "extracted/*" "twrp/*" "repack.sh" recovery_manager.sh" "README.md" ".dialogrc" "colors.properties" "cleanup.sh" ".git/*" -d /data/local/autorepack >/dev/null
 [ ! -d $MODPATH/system ] && { ui_print "Aborting!"; ui_print "Failed to create module directory!"; abort; }
 ui_print "- Unmounting /system, /data, and rootfs"
 mount -o ro,remount "/" 2>/dev/null
@@ -229,7 +219,7 @@ set_permissions() {
   # set_perm  $MODPATH/system/bin/dex2oat         0     2000    0755      u:object_r:dex2oat_exec:s0
   # set_perm  $MODPATH/system/lib/libart.so       0     0       0644  set_perm $MODPATH/system/$bin/systemize 0 0 0777
   set_perm_recursive $MODPATH/system/bin 0 0 0755 0755
-  set_perm_recursive $folder 0 0 0777 0777
+  set_perm_recursive /data/local/repack 0 0 0777 0777
   #set_perm $MODPATH/system/lib/libcap.so.2 0 0 0644
 }
 
