@@ -3,7 +3,9 @@ export PATH=$PWD/bin:$PATH
 export LC_ALL=C
 export TERMINFO=$PREFIX/share/terminfo/
 export HOME=$PWD
+if [ ! -d /sdcard/Repacks ]; then 
 mkdir /sdcard/Repacks
+fi
 
 trap '{ kill -9 $(jobs -p); umount tmp; exit; } &> /dev/null;' EXIT INT
 
