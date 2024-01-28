@@ -197,7 +197,7 @@ unzip -o "$ZIPFILE" "gui/*" -d $MODPATH/system >/dev/null
 mv -f $MODPATH/system/gui $MODPATH/system/bin
  #Create work folders
 ui_print "- Creating working folders"
-unzip -oq "$ZIPFILE" "bin/*" "tmp/* "extracted/*" "twrp/*" "repack.sh" recovery_manager.sh" "README.md" ".dialogrc" "colors.properties" "cleanup.sh" ".git/*" -d /data/local/autorepack >/dev/null
+unzip -oq "$ZIPFILE" "bin/*" "tmp/*" "extracted/*" "twrp/*" "repack.sh" "recovery_manager.sh" "README.md" ".dialogrc" "colors.properties" "cleanup.sh" ".git/*" -d /data/local/autorepack >/dev/null
 [ ! -d $MODPATH/system ] && { ui_print "Aborting!"; ui_print "Failed to create module directory!"; abort; }
 ui_print "- Unmounting /system, /data, and rootfs"
 mount -o ro,remount "/" 2>/dev/null
