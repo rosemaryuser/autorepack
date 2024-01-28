@@ -7,7 +7,7 @@
 umask 022
 
 # Global vars
-export TMPDIR=/dev/tmp
+TMPDIR=/dev/tmp
 PERSISTDIR=/sbin/.magisk/mirror/persist
 
 rm -rf $TMPDIR 2>/dev/null
@@ -169,5 +169,5 @@ cd /
 $BOOTMODE || recovery_cleanup
 rm -rf $TMPDIR
 
-ui_print "- Done. Pls reboot your device"
+ui_print "- Done."
 exit 0
