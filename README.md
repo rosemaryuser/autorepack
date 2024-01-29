@@ -65,7 +65,7 @@ Integrity Check also checks the workspace so that there's no residual files that
 - Option to enable/disable encryption, magisk and recovery
 - Remote updating, listing new and past updates.
 
-and many more..
+and many more.. (coming soon)
 
 >[!NOTE]
 >This script is only usable in Android phones, original Telegram chat:
