@@ -1,5 +1,11 @@
 # AutoRepack
 
+
+# TASK LIST
+- [ ] fix rw
+- [ ] make dfe,magisk,recovery option toggleable 
+
+
 >[!IMPORTANT]
 >Converts both fastboot and recovery flashable roms into flashable dats. Type su and repack in terminal to start.
 >
