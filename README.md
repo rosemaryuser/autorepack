@@ -7,7 +7,7 @@
 ```
 apt install git p7zip -y
 git clone https://github.com/rosemaryuser/autorepack.git
-7z a -tzip autorepack.zip ./autorepack/*
+7za a -tzip autorepack.zip ~ /autorepack/.
 su
 mv autorepack.zip -t /sdcard
 ```
