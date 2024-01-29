@@ -18,11 +18,11 @@ su
 mv autorepack.zip -t /sdcard
 ```
 >[!NOTE]
->__Find your autorepack.zip in your internal storage and flash it in magisk__
->
 >__Put those command in termux__
 >
->__Alternatively you can just dowload the module from release section or zip__ 
+>__Find your autorepack.zip in your internal storage and flash it in magisk__
+>
+>__Alternatively you can just dowload the module from release section__ 
 
 This script is designed to make custom ROM flashings easier on the user. ~~Note that this is **for Poco F3 device.**~~
 Many recoveries still can't flash these ROMs and this tool allows you to convert them into TWRP friendly flashables. :+1:
@@ -57,13 +57,13 @@ Integrity Check also checks the workspace so that there's no residual files that
 - Fastboot-recovery conversion
 - Compression to lessen repack size (auto detected if not given value)
 - Flashable zip splitting to bypass 4G limit in recoveries.
-- Granting partitions read-write access
+- Granting partitions read-write access (not working)
 - Can re-repack already repacked ROMs.
 - Custom recovery options
 - Custom magisk options
 - Firmware selection
 - Option to enable/disable encryption, magisk and recovery
-- Remote updating, listing new and past updates, update reversing.
+- Remote updating, listing new and past updates.
 
 and many more..
 
