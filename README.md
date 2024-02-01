@@ -3,7 +3,8 @@
 
 # TASK LIST
 - [ ] fix rw
-- [ ] make dfe,magisk,recovery option toggleable 
+- [ ] make dfe,magisk,recovery option toggleable
+- [ ] maybe ui change instead of gui
 
 
 >[!IMPORTANT]
