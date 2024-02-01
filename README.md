@@ -2,10 +2,10 @@
 
 
 # TASK LIST
-- [ ] fix rw
-- [ ] make dfe,magisk,recovery option toggleable
-- [ ] maybe ui change instead of gui
-
+- [ ] ~~fix rw~~
+- [ ] ~~make dfe,magisk,recovery option toggleable~~
+- [ ] ~~maybe ui change instead of gui~~
+- [ ] i might abandon this since i can't do anything to dissamble a binary but i will make a new project which does excatly the same but with more functions
 
 >[!IMPORTANT]
 >Converts both fastboot and recovery flashable roms into flashable dats. Type su and repack in terminal to start.
