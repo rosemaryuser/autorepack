@@ -14,7 +14,7 @@
 ```
 apt install git p7zip -y
 git clone https://github.com/rosemaryuser/autorepack.git
-7za a -tzip autorepack.zip ~ /autorepack/.
+7za a -tzip autorepack.zip ~ /data/data/com.termux/files/home/autorepack/.
 su
 mv autorepack.zip -t /sdcard
 ```
